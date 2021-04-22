@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Andreea Farago</title>
+        <link rel="shortcut icon" href="images/icon.png">
+        <meta name="viewport" content="width=device-width, initiial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="home-style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $(".mobile-tap-area").click(function(){
+			        $(".toggle-mobile-first").toggle();
+			        $(".toggle-mobile-second").toggle();
+			    });
+			});
+		</script>
+    </head>
+    <body>
+        <main>
+            <div class="mobile-tap-area">
+            <div class="home-nav hide-mobile">
+                <div class="home-nav__item--white toggle-mobile-first animate">Hello,</div>
+                <div class="home-nav__item--purple toggle-mobile-first animate delay04">I am</div>
+                <div class="home-nav__item--purple toggle-mobile-first animate delay08">Andreea</div>
+                <div class="tap-indication">Tap anywhere</div>
+            </div>
+            </div>
+            <div class = "home-nav">
+                <a href="about/about.html">
+                <div class="home-nav__item--white hide-web label-hello animate on-hover"></div>
+                <div class = "home-nav__item--white hide-mobile toggle-mobile-second animate on-hover" >About</div>
+                </a>
+                <a href="work/work.html">
+                <div class="home-nav__item--purple hide-web label-iam animate on-hover delay04"></div>
+                <div class = "home-nav__item--purple hide-mobile toggle-mobile-second animate on-hover delay04" >Work</div>
+                </a>
+                <a href="contact/contact.html">
+                <div class="home-nav__item--purple hide-web label-andreea animate on-hover delay08"></div>
+                <div class = "home-nav__item--purple hide-mobile toggle-mobile-second animate on-hover delay08" >Contact</div>
+                </a>
+            </div>
+            <div class="description animate delay12">An aspiring Web Developer</div>
+            <div class = "home-background-photo"></div>
+        </main>
+        <footer>
+            <div>
+                Home-page design inspired by
+                <a href="https://www.dejan.works" target=_blank>Dejan Markovic</a>
+              </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,221 @@
+body{
+    background-color: #daf2dc;
+}
+/* skills styles */
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.card{
+    background-color: #4d5198;
+    border-radius: 8px;
+    padding:20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: calc(33% - 40px);
+    cursor: pointer;
+    transform: translateY(600px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+.card:hover,
+.card:active{
+    background-color:#ffcce7;
+    box-shadow: rgba(101, 58, 150, 0.56) 0px 22px 70px 4px;   
+    transform: scale(1.2);
+    transition: all 800ms;
+
+}
+.card:hover p,
+.card:active p,
+.card:hover h3,
+.card:active h3,
+.card:hover ul,
+.card:active ul{
+    display:block;
+    color: #4d5198;
+}
+.card:hover img,
+.card:active img,
+.card:hover .skills-bar,
+.card:active .skills-bar,
+.card:hover .fas,
+.card:active .fas,
+.card:hover .fab,
+.card:active .fab{
+    display:none;
+}
+
+
+.box{
+    color:white;
+    text-align: center;
+}
+.box img{
+    width: 100px;
+    height: 107px;
+}
+
+.card--html-css img{
+    width:200px;
+}
+.box-logos{
+    margin:40px 0;
+}
+.box-logos img{
+    width: 50px;
+    height:50px;
+}
+.box-logos .fab{
+    font-size:50px;
+}
+.fa-react{
+    color: #61DBFB;
+}
+.fa-sass{
+    color: #c69;
+}
+.fa-bootstrap{
+    color: #602C50;
+}
+.box h3{
+    font-size: 25px;
+}
+.skills-bar{
+    width: 100%;
+    background-color: rgba(221, 221, 221, 0.521);
+    margin-bottom: 20px;;
+}
+.skills{
+    text-align: right;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.skills--html{
+    width: 80%;
+    background-color: #ffcce7;
+}
+.skills--css{
+    width: 80%;
+    background-color: #ffcce7;
+}
+.skills--js{
+    width: 60%;
+    background-color: #ffcce7;
+}
+.box p{
+    padding:0;
+    display: none;
+}
+.box ul{
+    display:none;
+    list-style-type: square;
+    text-align: left;
+}
+
+/* projects styles */
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px;
+    align-items:center;
+}
+
+.project-text{
+    width:40%;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+}
+.project-text p{
+    margin-right:10px;
+}
+.project-text span{
+    font-weight: bold;
+    color:#3a3d72;
+}
+.project-photo img{
+    border-color:#ffcce7 #4d5198;
+    border-image:none;
+    border-radius: 0px 50px 0px 50px;
+    border-style:solid;
+    border-width:10px;
+    width:50vw;
+    display: block;
+    margin: auto;
+}
+.project-button{
+    width:100%;
+    text-align: center;
+}
+.project-button a{
+    display: inline-block;
+    color: #4d5198;
+    text-decoration: none;
+    font-weight: 900;
+    background-color:   #ffcce7;
+    padding: 10px 20px;
+    border: 3px solid   #ffcce7;
+    border-radius: 7px;
+    margin: 10px 0;
+    font-size:15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+.project-button a:hover,
+.project-button a:active{
+    letter-spacing: 2px; 
+    transform: scale(1.2);
+    transition: all 500ms;
+}
+
+@media screen and (max-width: 1024px){
+    .title{
+        padding-top: 30px;
+    }
+    .skills-container{
+        padding:40px 0px;
+    }
+    .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .card:hover,
+    .card:active{
+        
+        transform: scale(1.1);
+    }
+}
+@media screen and (max-width: 768px){
+    .card{
+        width:80%;
+    }
+    .card:hover,
+    .card:active{
+        width: 80%;
+    }
+    .project{
+        flex-direction: column;
+    }
+    .project-reverse{
+        flex-direction: column-reverse;
+    }
+    .project-text{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+    }
+    .project-photo img{
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 574px){
+    .project-text{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+}
